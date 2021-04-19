@@ -1,0 +1,28 @@
+{
+    "name": "lawyersoa/php-design-pattern",
+    "description": "PHP设计模式范例",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lawyersoa",
+            "email": "business@lawyersoa.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPDesignPattern\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPDesignPattern\\Tests\\": "tests/"
+        }
+    }
+}
