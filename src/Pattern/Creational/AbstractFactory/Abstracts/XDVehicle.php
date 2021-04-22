@@ -9,9 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Creational\Builder;
+namespace PHPDesignPattern\Pattern\Creational\AbstractFactory\Abstracts;
 
-class Builder
+abstract class XDVehicle extends Vehicle
 {
+    protected $brand = '小豆';
 
 }

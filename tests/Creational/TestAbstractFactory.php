@@ -9,9 +9,30 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Creational\AbstractFactory;
+use PHPDesignPattern\Pattern\Creational\AbstractFactory\XDFactory;
+use PHPDesignPattern\Pattern\Creational\AbstractFactory\DDFactory;
 
-class AbstractFactory
-{
+require __DIR__ . '/../../vendor/autoload.php';
 
+try {
+    //小豆生产线生产一辆公共汽车
+    $newXDBus = XDFactory::manufactureBus();
+    $newXDBus->runInBusRoad();
+    //小豆生产线生产一辆小轿车
+    $newXDCar = XDFactory::manufactureCar();
+    $newXDCar->runInCarRoad();
+    //小豆生产线生产一辆卡车
+    $newXDTruck = XDFactory::manufactureTruck();
+    $newXDTruck->runInTruckRoad();
+    //大豆生产线生产一辆公共汽车
+    $newDDBus = DDFactory::manufactureBus();
+    $newDDBus->runInBusRoad();
+    //大豆生产线生产一辆小轿车
+    $newDDCar = DDFactory::manufactureCar();
+    $newDDCar->runInCarRoad();
+    //大豆生产线生产一辆卡车
+    $newDDTruck = DDFactory::manufactureTruck();
+    $newDDTruck->runInTruckRoad();
+} catch (Exception $e) {
+    echo $e->getMessage() . PHP_EOL;
 }

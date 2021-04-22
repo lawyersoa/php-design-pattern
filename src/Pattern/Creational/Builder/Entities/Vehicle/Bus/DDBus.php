@@ -1,0 +1,26 @@
+<?php
+
+/*
+ * This file is part of the lawyersoa/allinpay.
+ *
+ * (c) lawyersoa <business@lawyersoa.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
+namespace PHPDesignPattern\Pattern\Creational\Builder\Entities\Vehicle\Bus;
+
+use PHPDesignPattern\Pattern\Creational\Builder\Abstracts\Vehicle;
+use PHPDesignPattern\Pattern\Creational\Builder\Interfaces\Bus;
+use function PHPDesignPattern\output;
+
+class DDBus extends Vehicle implements Bus
+{
+    public function __construct()
+    {
+        output("我是一辆大豆牌公共汽车。");
+        $this->setName('公共汽车');
+        $this->setBrand('大豆牌');
+    }
+}

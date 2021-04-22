@@ -12,10 +12,22 @@
 namespace PHPDesignPattern;
 
 /**
- * @param mixed ...$data
+ * 打印内容并中断
+ *
+ * @param mixed ...$content 数据
  */
-function dump(...$data)
+function dump(...$content)
 {
-    var_dump(...$data);
+    var_dump(...$content);
     exit();
+}
+
+/**
+ * 输出内容并换行
+ *
+ * @param mixed $content
+ */
+function output($content)
+{
+    echo $content . PHP_EOL;
 }

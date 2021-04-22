@@ -9,9 +9,34 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Creational\FactoryMethod;
+use PHPDesignPattern\Pattern\Creational\FactoryMethod\BusFactory;
+use PHPDesignPattern\Pattern\Creational\FactoryMethod\CarFactory;
+use PHPDesignPattern\Pattern\Creational\FactoryMethod\TruckFactory;
 
-class FactoryMethod
-{
+require __DIR__ . '/../../vendor/autoload.php';
 
+try {
+    //生产一辆公共汽车
+    $newBus = BusFactory::manufacture();
+    $newBus
+        ->startEngine()
+        ->run()
+        ->speedUp()
+        ->stopEngine();
+    //生产一辆小轿车
+    $newCar = CarFactory::manufacture();
+    $newCar
+        ->startEngine()
+        ->run()
+        ->speedUp()
+        ->stopEngine();
+    //生产一辆卡车
+    $newTruck = TruckFactory::manufacture();
+    $newTruck
+        ->startEngine()
+        ->run()
+        ->speedUp()
+        ->stopEngine();
+} catch (Exception $e) {
+    echo $e->getMessage() . PHP_EOL;
 }

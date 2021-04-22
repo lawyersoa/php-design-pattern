@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Creational\AbstractFactory;
+namespace PHPDesignPattern\Pattern\Creational\Builder\Interfaces;
 
-class AbstractFactory
+interface Car
 {
 
 }
