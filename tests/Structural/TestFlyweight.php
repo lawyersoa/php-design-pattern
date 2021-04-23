@@ -9,9 +9,3 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Structural\Flyweight;
-
-class Flyweight
-{
-
-}

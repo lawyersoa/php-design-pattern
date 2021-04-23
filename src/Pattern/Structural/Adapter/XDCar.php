@@ -11,7 +11,9 @@
 
 namespace PHPDesignPattern\Pattern\Structural\Adapter;
 
-class Adapter
+use PHPDesignPattern\Pattern\Structural\Adapter\Abstracts\Car;
+
+class XDCar extends Car
 {
 
 }

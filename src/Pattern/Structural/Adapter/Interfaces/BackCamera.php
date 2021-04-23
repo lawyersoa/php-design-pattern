@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Creational\Singleton;
+namespace PHPDesignPattern\Pattern\Structural\Adapter\Interfaces;
 
-class Singleton
+interface BackCamera
 {
-
+    public function display();
 }

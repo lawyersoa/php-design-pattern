@@ -9,9 +9,17 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Creational\Singleton;
+use PHPDesignPattern\Pattern\Creational\Singleton\Singletons\Driver;
+use function PHPDesignPattern\dump;
 
-class Singleton
-{
+require __DIR__ . '/../../vendor/autoload.php';
 
+try {
+    $driver1 = Driver::getInstance();
+    $driverNo1 = $driver1->getDriverNo();
+    $driver2 = Driver::getInstance();
+    $driverNo2 = $driver2->getDriverNo();
+    dump($driverNo1, $driverNo2);
+} catch (Exception $e) {
+    echo $e->getMessage() . PHP_EOL;
 }

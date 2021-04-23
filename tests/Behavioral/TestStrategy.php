@@ -9,9 +9,33 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Behavioral\Strategy;
+use PHPDesignPattern\Pattern\Behavioral\Strategy\Car;
+use PHPDesignPattern\Pattern\Behavioral\Strategy\Strategies\Transmission\{
+    AMT,
+    AT,
+    CVT,
+    DCT,
+    MT
+};
+use function PHPDesignPattern\dump;
 
-class Strategy
-{
+require __DIR__ . '/../../vendor/autoload.php';
 
+try {
+    $AMTTransmission = new AMT();
+    $ATTransmission = new AT();
+    $CVTTransmission = new CVT();
+    $DCTTransmission = new DCT();
+    $MTTransmission = new MT();
+    $newCar = new Car();
+    $newCar = new Car();
+    $newCar
+        ->setTransmission($AMTTransmission)
+        ->setTransmission($ATTransmission)
+        ->setTransmission($CVTTransmission)
+        ->setTransmission($DCTTransmission)
+        //->setTransmission($MTTransmission)
+        ->speedUp();
+} catch (Exception $e) {
+    dump($e->getMessage());
 }

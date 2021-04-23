@@ -9,3 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
+namespace PHPDesignPattern\Pattern\Structural\Adapter\Interfaces;
+
+interface Car
+{
+    public function backupCamera();
+}

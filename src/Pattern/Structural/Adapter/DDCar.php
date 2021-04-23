@@ -9,9 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Behavioral\Strategy;
+namespace PHPDesignPattern\Pattern\Structural\Adapter;
 
-class Strategy
+use PHPDesignPattern\Pattern\Structural\Adapter\Abstracts\Car;
+
+class DDCar extends Car
 {
 
 }
