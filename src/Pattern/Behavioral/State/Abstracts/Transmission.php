@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Behavioral\Observer;
+namespace PHPDesignPattern\Pattern\Behavioral\State\Abstracts;
 
-class Observer
+abstract class Transmission
 {
-
+    abstract function handle(Car $car, int $speed);
 }

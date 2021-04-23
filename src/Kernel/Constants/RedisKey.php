@@ -9,9 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Behavioral\State;
+namespace PHPDesignPattern\Kernel\Constants;
 
-class State
+class RedisKey
 {
-
+    const CAR_SPEED = 'PHP:DESIGN:PATTERN:STATE:CAR_SPEED:';
+    const CAR_RUNNING = 'PHP:DESIGN:PATTERN:STATE:CAR_RUNNING';
 }

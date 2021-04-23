@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the lawyersoa/allinpay.
+ * This file is part of the lawyersoa/php-design-pattern.
  *
  * (c) lawyersoa <business@lawyersoa.com>
  *

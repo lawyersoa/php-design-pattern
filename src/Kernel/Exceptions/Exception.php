@@ -9,9 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Pattern\Structural\Flyweight;
+namespace PHPDesignPattern\Kernel\Exceptions;
 
-class Flyweight
+use Exception as BaseException;
+
+class Exception extends BaseException
 {
-
+    //
 }

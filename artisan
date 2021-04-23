@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 
 /*
@@ -9,15 +10,18 @@
  * with this source code in the file LICENSE.
  */
 
-use PHPDesignPattern\Pattern\Behavioral\State\Car;
-use function PHPDesignPattern\dump;
+require __DIR__ . '/vendor/autoload.php';
 
-require __DIR__ . '/../../vendor/autoload.php';
+use Symfony\Component\Console\Application;
+use PHPDesignPattern\Command\{
+    CarDrive
+};
+
+$application = new Application();
 
 try {
-    $newCar = new Car();
-    $newCar->startEngine();
+    $application->add(new CarDrive());
+    $application->run();
 } catch (Exception $e) {
-    dump($e->getMessage());
-}
 
+}
