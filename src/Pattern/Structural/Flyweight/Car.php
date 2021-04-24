@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the lawyersoa/php-design-pattern.
+ * This file is part of the lawyersoa/allinpay.
  *
  * (c) lawyersoa <business@lawyersoa.com>
  *
@@ -11,7 +11,12 @@
 
 namespace PHPDesignPattern\Pattern\Structural\Flyweight;
 
-class Flyweight
+use function PHPDesignPattern\output;
+
+class Car
 {
 
+    public function __construct()
+    {
+    }
 }
