@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace PHPDesignPattern\Kernel\Entities\Automobile;
+namespace PHPDesignPattern\Pattern\Structural\Facade\Systems;
 
-use PHPDesignPattern\Kernel\Abstracts\Automobile;
+use PHPDesignPattern\Pattern\Structural\Facade\Abstracts\System;
 
-class Bus extends Automobile
+class DetectingSystem extends System
 {
-
+    protected $name = '监测系统';
 }
