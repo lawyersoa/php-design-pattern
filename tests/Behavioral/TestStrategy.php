@@ -28,13 +28,12 @@ try {
     $DCTTransmission = new DCT();
     $MTTransmission = new MT();
     $newCar = new Car();
-    $newCar = new Car();
     $newCar
-        ->setTransmission($AMTTransmission)
-        ->setTransmission($ATTransmission)
-        ->setTransmission($CVTTransmission)
-        ->setTransmission($DCTTransmission)
-        //->setTransmission($MTTransmission)
+//        ->setTransmission($AMTTransmission)
+//        ->setTransmission($ATTransmission)
+//        ->setTransmission($CVTTransmission)
+//        ->setTransmission($DCTTransmission)
+        ->setTransmission($MTTransmission)
         ->speedUp();
 } catch (Exception $e) {
     dump($e->getMessage());

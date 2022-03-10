@@ -12,6 +12,7 @@
 use PHPDesignPattern\Pattern\Creational\FactoryMethod\BusFactory;
 use PHPDesignPattern\Pattern\Creational\FactoryMethod\CarFactory;
 use PHPDesignPattern\Pattern\Creational\FactoryMethod\TruckFactory;
+use PHPDesignPattern\Pattern\Creational\FactoryMethod\NewEnergyFactory;
 
 require __DIR__ . '/../../vendor/autoload.php';
 
@@ -33,6 +34,13 @@ try {
     //生产一辆卡车
     $newTruck = TruckFactory::manufacture();
     $newTruck
+        ->startEngine()
+        ->run()
+        ->speedUp()
+        ->stopEngine();
+    //生产一辆新能源
+    $newNewEnergy = NewEnergyFactory::manufacture();
+    $newNewEnergy
         ->startEngine()
         ->run()
         ->speedUp()
